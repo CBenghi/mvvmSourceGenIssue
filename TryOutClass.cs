@@ -6,13 +6,13 @@ namespace TryOut
 {
 	public partial class TryOutClass : ObservableObject
 	{
-		//[ObservableProperty]
-		//private string someValue;
+		[ObservableProperty]
+		private string someValue;
 
-		//[ICommand]
-		//private void Funzia()
-		//{
-		//	SomeValue = "newValue";
-		//}
+		[ICommand]
+		private void Funzia()
+		{
+			SomeValue = "newValue";
+		}
 	}
 }
