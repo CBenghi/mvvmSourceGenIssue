@@ -6,13 +6,18 @@ namespace TryOut
 {
 	public partial class TryOutClass : ObservableObject
 	{
+		private int clickCount;
+
 		[ObservableProperty]
-		private string someValue;
+		private string someValue = "Hi There";
 
 		[ICommand]
 		private void Funzia()
 		{
-			SomeValue = "newValue";
+			if (SetProperty(ref someValue, clickCount % 2 == 0 ? "Have a great day" : "Hi There", "SomeValue"))
+            {
+				clickCount++;
+            }
 		}
 	}
 }

@@ -5,6 +5,6 @@
 		<UseWPF>true</UseWPF>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.0-build.1166.g41187c71dc" />
+		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.0-build.1167.g0886fe66f9" />
 	</ItemGroup>
 </Project>
