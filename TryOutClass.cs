@@ -22,7 +22,7 @@ namespace TryOut
 			// but it cannot be referenced here, or the compilation will fail.
 			// This failure does happen if the project does not set <UseWPF>true</UseWPF>
 
-			// SomeValue = ""; 
+			SomeValue = ""; 
 
 			if (SetProperty(ref someValue, clickCount % 2 == 0 ? "Have a great day" : "Hi There", "SomeValue"))
             {
